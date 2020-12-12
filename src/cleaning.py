@@ -34,12 +34,12 @@ def new_index(data):
     return new_data
 
 
-def re_label(data, dct):
+def re_label(data, dictionary):
     '''
-    Function that re-label a column based on a dictionary keys and values.
+    Function that re-label a column based on a dictionary's keys and values
     input = dataframe, dictionary
     output = dataframe
     '''
-    for k,v in dct.items():
-        new_data = data.replace(k,v)
-    return new_data
+    for k,v in dictionary.items():
+        data = data.replace(k,v)
+    return data
