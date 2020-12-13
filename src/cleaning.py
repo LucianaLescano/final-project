@@ -26,7 +26,7 @@ def sort_by_elements(data, serie, lst):
 
 def new_index(data):
     ''' 
-    Function that resets the index of a dataframe
+    Function that resets the index of a dataframe.
     input = dataframe
     output = dataframe
     '''
@@ -36,10 +36,76 @@ def new_index(data):
 
 def re_label(data, dictionary):
     '''
-    Function that re-label a column based on a dictionary's keys and values
+    Function that re-label a column based on a dictionary's keys and values.
     input = dataframe, dictionary
     output = dataframe
     '''
     for k,v in dictionary.items():
         data = data.replace(k,v)
     return data
+
+
+
+def rename_columns(data, dic):
+    ''' 
+    Function to rename columns
+    input = dataframe, dictionary where the keys equals the old name and the values equals the new name
+    ouput = dataframe
+    '''
+    data_back_up = data.copy()
+    data = data.rename(columns=dic)
+    return data
+
+
+def order(data, lst):
+    '''
+    Function that changes the order of the series within a dataframe.
+    input = dataframe
+    output = dataframe
+    '''
+    data_back_up = data.copy()
+    data = data[lst]
+    return data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
