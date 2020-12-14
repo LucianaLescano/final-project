@@ -1,0 +1,7 @@
+Para la bibliografia:
+
+Datasets:
+1- https://www.kaggle.com/eward96/skincare-products-and-their-ingredients
+2- https://www.kaggle.com/raghadalharbi/all-products-available-on-sephora-website
+3- https://github.com/LauraRobertson/skincareAPI
+
