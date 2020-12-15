@@ -68,7 +68,14 @@ def order(data, lst):
     return data
 
 
-
+def concating(lst):
+    '''
+    Function that concatenates multiples dataframes.
+    input = list of dataframes
+    output = final dataframe
+    '''
+    new_data = pd.concat(lst, axis=1)
+    return new_data
 
 
 

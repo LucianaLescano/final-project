@@ -115,11 +115,11 @@
 111,ERROR
 112,ERROR
 113,ERROR
-114,ERROR
+114,"Normal, Combination "
 115,ERROR
 116,ERROR
 117,ERROR
-118,ERROR
+118,"Normal, Dry"
 119,ERROR
 120,ERROR
 121,ERROR
@@ -127,44 +127,45 @@
 123,ERROR
 124,ERROR
 125,ERROR
-126,ERROR
+126,"Normal, Dry, Combination, and Oily "
 127,ERROR
 128,ERROR
 129,ERROR
 130,ERROR
 131,ERROR
-132,ERROR
+132,"Normal, Dry, Combination, and Oily"
 133,ERROR
 134,ERROR
-135,ERROR
+135,"Normal, Dry, Combination, and Oily "
 136,ERROR
-137,ERROR
+137,"Normal, Dry, Combination, and Oily "
 138,ERROR
-139,ERROR
-140,ERROR
+139,"Normal, Dry, Combination, and Oily"
+140,"Normal, Dry, Combination, and Oily "
 141,ERROR
-142,ERROR
+142,"Normal, Dry, Combination, and Oily "
 143,ERROR
-144,ERROR
+144,"Normal, Dry, Combination, and Oily
+"
 145,ERROR
 146,ERROR
 147,ERROR
 148,ERROR
-149,ERROR
-150,ERROR
-151,ERROR
-152,ERROR
-153,ERROR
-154,ERROR
-155,ERROR
-156,ERROR
-157,ERROR
-158,ERROR
-159,ERROR
-160,ERROR
-161,ERROR
-162,ERROR
-163,ERROR
+149,"Normal, Dry, Combination, and Oily "
+150,"Normal, Dry, Combination, and Oily "
+151,"Normal, Dry, Combination, and Oily "
+152,"Normal, Dry, Combination, and Oily "
+153,"Normal, Dry, Combination, and Oily "
+154,"Normal, Dry, Combination, and Oily "
+155, Combination and Oily 
+156,"Normal, Dry, Combination, and Oily "
+157,"Normal, Dry, Combination, and Oily "
+158,"Normal, Dry, Combination, and Oily "
+159,"Normal, Dry, Combination, and Oily "
+160,"Normal, Dry, Combination, and Oily "
+161,"Normal, Dry, Combination, and Oily "
+162,"Normal, Dry, Combination, and Oily "
+163, Combination and Oily 
 164,ERROR
 165,ERROR
 166,ERROR
@@ -174,47 +175,47 @@
 170,ERROR
 171,ERROR
 172,ERROR
-173,ERROR
+173,Normal 
 174,ERROR
-175,ERROR
-176,ERROR
-177,ERROR
-178,ERROR
-179,ERROR
-180,ERROR
-181,ERROR
+175,"Normal, Dry, Combination, and Oily "
+176,"Normal, Dry, and Combination "
+177,"Normal, Dry, and Combination "
+178,Dry 
+179,"Normal, Dry, and Combination "
+180,"Normal, Dry, Combination, and Oily "
+181,"Normal, Dry, Combination, and Oily "
 182,ERROR
-183,ERROR
-184,ERROR
-185,ERROR
-186,ERROR
-187,ERROR
-188,ERROR
-189,ERROR
-190,ERROR
-191,ERROR
-192,ERROR
-193,ERROR
-194,ERROR
-195,ERROR
+183,"Normal, Dry, Combination, and Oily "
+184,"Normal, Dry, Combination, and Oily "
+185,"Normal, Dry, Combination, and Oily "
+186," Combination, and Oily "
+187,"Normal, Dry, Combination, and Oily "
+188,Combination 
+189,"Normal, Dry, Combination, and Oily "
+190,"Normal, Dry, Combination, and Oily "
+191,"Normal, Dry, Combination, and Oily "
+192,"Normal, Dry, Combination, and Oily "
+193,"Normal, Dry, Combination, and Oily "
+194,"Normal, Dry, Combination, and Oily "
+195,"Normal, Dry, Combination, and Oily "
 196,ERROR
-197,ERROR
-198,ERROR
-199,ERROR
+197,"Normal, Dry, Combination, and Oily "
+198," Combination, and Oily "
+199,"Normal, Dry, Combination, and Oily "
 200,ERROR
-201,ERROR
-202,ERROR
-203,ERROR
-204,ERROR
-205,ERROR
+201,"Normal, Dry, Combination, and Oily "
+202,"Normal, Dry, Combination, and Oily "
+203,Oily 
+204,"Normal, Dry, Combination, and Oily "
+205,"Normal, Dry, Combination, and Oily "
 206,ERROR
 207,ERROR
 208,ERROR
 209,ERROR
 210,ERROR
-211,ERROR
-212,ERROR
-213,ERROR
+211," Combination, and Oily"
+212,"Normal, Dry, Combination, and Oily "
+213,"Combination, Oily"
 214,ERROR
 215,ERROR
 216,ERROR
@@ -230,34 +231,34 @@
 226,ERROR
 227,ERROR
 228,ERROR
-229,ERROR
+229,Oily 
 230,ERROR
-231,ERROR
+231,"Normal, Dry, and Combination "
 232,ERROR
 233,ERROR
-234,ERROR
+234,"Normal, Dry, Combination, and Oily "
 235,ERROR
 236,ERROR
-237,ERROR
+237,Dry 
 238,ERROR
 239,ERROR
-240,ERROR
+240,"Normal, Dry, Combination, and Oily "
 241,ERROR
 242,ERROR
 243,ERROR
 244,ERROR
-245,ERROR
+245,"Normal, Dry, Combination, and Oily "
 246,ERROR
-247,ERROR
+247,"Normal, Dry, Combination, and Oily "
 248,ERROR
 249,ERROR
 250,ERROR
 251,ERROR
-252,ERROR
+252,"Normal, Dry, Combination, and Oily  "
 253,ERROR
 254,ERROR
 255,ERROR
-256,ERROR
+256,"Normal, Dry, Combination, and Oily "
 257,ERROR
 258,ERROR
 259,ERROR
@@ -268,15 +269,15 @@
 264,ERROR
 265,ERROR
 266,ERROR
-267,ERROR
+267,Dry
 268,ERROR
 269,ERROR
-270,ERROR
+270,"Normal, Dry, Combination, and Oily "
 271,ERROR
-272,ERROR
+272,"Normal, Dry, Combination, and Oily "
 273,ERROR
 274,ERROR
-275,ERROR
+275,Normal and Dry
 276,ERROR
-277,ERROR
-278,ERROR
+277,"Normal, Dry, Combination, and Oily "
+278,Combination and Oily 
