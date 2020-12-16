@@ -25,6 +25,7 @@ st.table(brand_result)
 # Second:
 
 multi_brand_option = st.multiselect("Please the brands you like the most:", options.list_brand)
+st.text(multi_brand_option)
 multi_brand_result = query.multi_brand(multi_brand_option)
 st.table(multi_brand_result)
 
@@ -42,6 +43,7 @@ st.table(multi_category_result)
 
 # Fifth
 skin_option = st.selectbox("Please choose a skin type:", options.list_type_skin)
+st.write('SKIN TYPEEEE!!!!!', skin_option)
 skin_result = query.skin_type(skin_option)
 st.table(skin_result)
 
@@ -50,3 +52,9 @@ money_rank = st.slider('How much money do you want to spend', options.min_money,
 st.write('MONEYYYYYYYYY!!!!!', money_rank)
 money_result = query.money(money_rank)
 st.table(money_result)
+
+# Seventh
+rating_option = st.slider('Rating', 0, 5)
+st.write('RATING!!!!!', rating_option)
+rating_result = query.rating(rating_option)
+st.table(rating_result)

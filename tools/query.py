@@ -55,6 +55,7 @@ def skin_type(skin_option):
     input = user's input
     output = dictionary
     '''
+    if skin_option
     five = list(collection.find({'Skin_Type':skin_option}, {'_id':0, 'Ingredients':0, 'URL':0, 'Price':0}))
     return five
 
@@ -66,5 +67,16 @@ def money(money_option):
     input = user's input
     output = dictionary
     '''
-    six = list(collection.find({'Price':{"$lt":money_option}}, {'_id':0, 'Ingredients':0, 'URL':0}).limit(5))
+    six = list(collection.find({'Price':{"$lte":money_option}}, {'_id':0, 'Ingredients':0, 'URL':0}).limit(5))
     return six
+
+# Seventh list: Rating
+
+def rating(rating_option):
+    '''
+    Query that returns the brand, category, name, skin type and rating according to the rating
+    input = user's input
+    output = dictionary
+    '''
+    seven = list(collection.find({'Rating':{"$lte":rating_option}}, {'_id':0, 'Ingredients':0, 'URL':0}).limit(5))
+    return seven

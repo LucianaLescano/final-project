@@ -13,6 +13,15 @@ def droping_columns(data, lst):
     new_data = data.drop(lst, axis=1)
     return new_data
 
+def droping_rows(data, lst):
+    ''' 
+    Function to drop columns from a dataset.
+    input = dataframe, list of columns names
+    output = draframe 
+    '''
+    new_data = data.drop(lst, axis=0)
+    return new_data
+
 
 def sort_by_elements(data, serie, lst):
     ''' 
@@ -68,13 +77,22 @@ def order(data, lst):
     return data
 
 
-def concating(lst):
+def concating_by_column(lst):
     '''
     Function that concatenates multiples dataframes.
     input = list of dataframes
     output = final dataframe
     '''
     new_data = pd.concat(lst, axis=1)
+    return new_data
+
+def concating_by_row(lst):
+    '''
+    Function that concatenates multiples dataframes.
+    input = list of dataframes
+    output = final dataframe
+    '''
+    new_data = pd.concat(lst, axis=0)
     return new_data
 
 
