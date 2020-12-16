@@ -11,7 +11,7 @@ def brand(brand_option):
     input = user's input
     output = dictionary
     '''
-    one = list(collection.find({'Brand':brand_option}, {'_id':0, 'Ingredients':0, 'URL':0, 'Price':0}).limit(5).sort('Rating', -1))
+    one = list(collection.find({'Brand':brand_option}, {'_id':0, 'Ingredients':0, 'URL':0, 'Price':0}).limit(6).sort('Rating', -1))
     return one
 
 # Second list: Multi-Brand
@@ -22,7 +22,7 @@ def multi_brand(multi_brand_option):
     input = user's input
     output = dictionary
     '''
-    two = list(collection.find({'Brand':multi_brand_option}, {'_id':0, 'Ingredients':0, 'URL':0, 'Price':0}).limit(5).sort('Rating', -1))
+    two = list(collection.find({'Brand':{"$in":multi_brand_option}}, {'_id':0, 'Ingredients':0, 'URL':0, 'Price':0}).limit(5).sort('Rating', -1))
     return two
 
 # Third list: Category
@@ -44,7 +44,7 @@ def multi_category(multi_category_option):
     input = user's input
     output = dictionary
     '''
-    four = list(collection.find({'Category':multi_category_option}, {'_id':0, 'Ingredients':0, 'URL':0, 'Price':0}).limit(5).sort('Rating', -1))
+    four = list(collection.find({'Category':{"$in":multi_category_option}}, {'_id':0, 'Ingredients':0, 'URL':0, 'Price':0}).limit(5).sort('Rating', -1))
     return four
 
 # Fifth list: Skin Type
@@ -55,8 +55,7 @@ def skin_type(skin_option):
     input = user's input
     output = dictionary
     '''
-    if skin_option
-    five = list(collection.find({'Skin_Type':skin_option}, {'_id':0, 'Ingredients':0, 'URL':0, 'Price':0}))
+    five = list(collection.find({'Skin_Type':skin_option}, {'_id':0, 'Ingredients':0, 'URL':0, 'Price':0}).limit(5).sort('Rating', -1))
     return five
 
 # Sixth list: Money
@@ -78,5 +77,5 @@ def rating(rating_option):
     input = user's input
     output = dictionary
     '''
-    seven = list(collection.find({'Rating':{"$lte":rating_option}}, {'_id':0, 'Ingredients':0, 'URL':0}).limit(5))
+    seven = list(collection.find({'Rating':rating_option}, {'_id':0, 'Ingredients':0, 'URL':0}).limit(5))
     return seven
