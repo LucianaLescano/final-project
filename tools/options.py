@@ -1,5 +1,22 @@
-import pandas as import pd 
+import pandas as pd 
+
+
 
 # Functions to work with the dataframe
 
-df = pd.read_csv('../data/.csv')
+data = pd.read_csv('data/final_dataset_to_mongo.csv', index_col='Unnamed: 0')
+
+# First list: Brand
+list_brand = list(data.Brand.unique())
+
+# Second list: Category
+list_category = list(data.Category.unique())
+
+# Third list: Skin Type
+list_type_skin = ['Normal', 'Dry', 'Combination', 'Oily', 'Sensitive']
+
+# Fourth list: Max moeny
+max_money = int(data.Price.max())
+
+# Fifth list: Min money
+min_money = int(data.Price.min())
