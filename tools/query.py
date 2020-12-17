@@ -60,8 +60,44 @@ def cleanser_skincare_routine_url(routine_skin_option_for_query, routine_money_o
     input = user's input
     output = dictionary
     '''
-    x = list(collection.find({"$and":[{'Skin_Type':routine_skin_option_for_query},{'Price':{"$lte":routine_money_option_for_query}}, {'Category':'Cleanser'}]}, {'_id':0, 'Brand':0, 'Category':0, 'Name':0, 'Skin_Type':0, 'Ingredients':0, 'Price':0, 'Rating':0}).limit(3).sort('Rating', -1))
-    return x
+    thirteen = list(collection.find({"$and":[{'Skin_Type':routine_skin_option_for_query},{'Price':{"$lte":routine_money_option_for_query}}, {'Category':'Cleanser'}]}, {'_id':0, 'Brand':0, 'Category':0, 'Skin_Type':0, 'Ingredients':0, 'Price':0, 'Rating':0}).limit(3).sort('Rating', -1))
+    return thirteen
+
+def moist_skincare_routine_url(routine_skin_option_for_query, routine_money_option_for_query):
+    '''
+    Query that returns the brand, category, name, skin type and rating according to the skin type
+    input = user's input
+    output = dictionary
+    '''
+    fourteen = list(collection.find({"$and":[{'Skin_Type':routine_skin_option_for_query},{'Price':{"$lte":routine_money_option_for_query}}, {'Category':'Moisturizer'}]}, {'_id':0, 'Brand':0, 'Category':0, 'Skin_Type':0, 'Ingredients':0, 'Price':0, 'Rating':0}).limit(3).sort('Rating', -1))
+    return fourteen
+
+def sun_skincare_routine_url(routine_skin_option_for_query, routine_money_option_for_query):
+    '''
+    Query that returns the brand, category, name, skin type and rating according to the skin type
+    input = user's input
+    output = dictionary
+    '''
+    fiveteen = list(collection.find({"$and":[{'Skin_Type':routine_skin_option_for_query},{'Price':{"$lte":routine_money_option_for_query}}, {'Category':'Sunscreen & After Sun Care'}]}, {'_id':0, 'Brand':0, 'Category':0, 'Skin_Type':0, 'Ingredients':0, 'Price':0, 'Rating':0}).limit(3).sort('Rating', -1))
+    return fiveteen
+
+def ton_skincare_routine_url(routine_skin_option_for_query, routine_money_option_for_query):
+    '''
+    Query that returns the brand, category, name, skin type and rating according to the skin type
+    input = user's input
+    output = dictionary
+    '''
+    sixteen = list(collection.find({"$and":[{'Skin_Type':routine_skin_option_for_query},{'Price':{"$lte":routine_money_option_for_query}}, {'Category':'Toner'}]}, {'_id':0, 'Brand':0, 'Category':0, 'Skin_Type':0, 'Ingredients':0, 'Price':0, 'Rating':0}).limit(3).sort('Rating', -1))
+    return sixteen
+
+def serum_skincare_routine_url(routine_skin_option_for_query, routine_money_option_for_query):
+    '''
+    Query that returns the brand, category, name, skin type and rating according to the skin type
+    input = user's input
+    output = dictionary
+    '''
+    seventeen = list(collection.find({"$and":[{'Skin_Type':routine_skin_option_for_query},{'Price':{"$lte":routine_money_option_for_query}}, {'Category':'Face Serum'}]}, {'_id':0, 'Brand':0, 'Category':0, 'Skin_Type':0, 'Ingredients':0, 'Price':0, 'Rating':0}).limit(3).sort('Rating', -1))
+    return seventeen
 
 
 ######### 2º PART

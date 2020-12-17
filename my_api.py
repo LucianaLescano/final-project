@@ -20,24 +20,21 @@ st.image(img, width=300, caption="skincare")
 st.header("What about having your own personalized skincare routine?")
 st.write(" ")
 
-# First:
-
 preference = st.selectbox("", ["Please select one", "Let’s go with the basic!", "Let’s go deep inside with the skincare routine!"])
-
+#try:
 if preference == 'Please select one':
     st.stop()
-st.success("Perfect!")
+    st.success("Perfect!")
 
-if preference == "Let’s go with the basic!":
-    st.stop()
+elif preference == "Let’s go with the basic!":
     #if st.button("Let's start by some basics!"):
     st.write(" ")
-    st.write("What's your skin type:")
+    st.subheader("What's your skin type:")
     routine_skin_option = st.radio("", options.list_type_skin)
     # st.write(routine_skin_option)
     routine_skin_option_for_query = str(routine_skin_option)
     st.write(" ")
-    st.write("How much money do you want to spend?")
+    st.subheader("How much money do you want to spend?")
     routine_money_option = st.text_input("", 0)
     # if st.button("Submit"):
     #    st.success("Perfect!")
@@ -50,26 +47,47 @@ if preference == "Let’s go with the basic!":
     st.table(skincare_routine_result_two)
     st.table(skincare_routine_result_three)
     st.write(" ")
-    st.write("To cheer you up to have a wonderful skincare routine. Here you have available all the links to the products:")
-    st.write(" ")
-    skincare_routine_result_one_url = query.cleanser_skincare_routine_url(routine_skin_option_for_query, routine_money_option_for_query)
-    st.write(skincare_routine_result_one_url)
-    # try:
-    #    link_one = st.write(skincare_routine_result_one_url[0].get('URL'))
-    #    if st.button("Open"):
-    #        webbrowser.open_new_tab(link_one)
-    # except:
-    #    pass
+    st.subheader("To cheer you up to have a wonderful skincare routine. Here you have available all the links to the products:")
+    try:
+        st.write(" ")
+        st.markdown("Cleansers")
+        skincare_routine_result_one_url = query.cleanser_skincare_routine_url(routine_skin_option_for_query, routine_money_option_for_query)
+        for i in range(0,3):
+                url = skincare_routine_result_one_url[i].get('URL')
+                if st.button(f"{skincare_routine_result_one_url[i].get('Name')}"):
+                    webbrowser.open_new_tab(url)
+    except:
+        st.button("Basic: Sorry! There is no cleansers we can offer you.")
+    try:
+        st.write(" ")
+        st.markdown("Moisturizers")
+        skincare_routine_result_two_url = query.moist_skincare_routine_url(routine_skin_option_for_query, routine_money_option_for_query)
+        for i in range(0,3):
+                url = skincare_routine_result_two_url[i].get('URL')
+                if st.button(f"{skincare_routine_result_two_url[i].get('Name')}"):
+                    webbrowser.open_new_tab(url)
+    except:
+        st.button("Basic: Sorry! There is no moisturizers we can offer you.")
+    try:
+        st.write(" ")
+        st.markdown("Sunscreens")
+        skincare_routine_result_three_url = query.sun_skincare_routine_url(routine_skin_option_for_query, routine_money_option_for_query)
+        for i in range(0,4):
+                url = skincare_routine_result_three_url[i].get('URL')
+                if st.button(f"{skincare_routine_result_three_url[i].get('Name')}"):
+                    webbrowser.open_new_tab(url)
+    except:
+        st.button("Basic: Sorry! There is no sunscreens we can offer you.")
 
 elif preference == "Let’s go deep inside with the skincare routine!":
     #if st.button("Let's start by some basics!"):
     st.write(" ")
-    st.write("What's your skin type:")
+    st.subheader("What's your skin type:")
     routine_skin_option = st.radio("", options.list_type_skin)
     # st.write(routine_skin_option)
     routine_skin_option_for_query = str(routine_skin_option)
     st.write(" ")
-    st.write("How much money do you want to spend?")
+    st.subheader("How much money do you want to spend?")
     routine_money_option = st.text_input("", 0)
     # if st.button("Submit"):
     #    st.success("Perfect!")
@@ -86,16 +104,60 @@ elif preference == "Let’s go deep inside with the skincare routine!":
     st.table(skincare_routine_result_two)
     st.table(skincare_routine_result_three)
     st.write(" ")
-    st.write("To cheer you up to have a wonderful skincare routine. Here you have available all the links to the products:")
-    st.write(" ")
-    skincare_routine_result_one_url = query.cleanser_skincare_routine_url(routine_skin_option_for_query, routine_money_option_for_query)
-    st.write(skincare_routine_result_one_url)
-    # try:
-    #    link_one = st.write(skincare_routine_result_one_url[0].get('URL'))
-    #    if st.button("Open"):
-    #        webbrowser.open_new_tab(link_one)
-    # except:
-    #    pass
+    st.subheader("To cheer you up to have a wonderful skincare routine. Here you have available all the links to the products:")
+    try:
+        st.write(" ")
+        st.markdown("Cleansers")
+        skincare_routine_result_one_url = query.cleanser_skincare_routine_url(routine_skin_option_for_query, routine_money_option_for_query)
+        for i in range(0,3):
+                url = skincare_routine_result_one_url[i].get('URL')
+                if st.button(f"{skincare_routine_result_one_url[i].get('Name')}"):
+                    webbrowser.open_new_tab(url)
+    except:
+        st.button("Extended: Sorry! There is no cleansers we can offer you.")
+    try:
+        st.write(" ")
+        st.markdown("Toners")
+        skincare_routine_result_four_url = query.ton_skincare_routine_url(routine_skin_option_for_query, routine_money_option_for_query)
+        for i in range(0,3):
+                url = skincare_routine_result_four_url[i].get('URL')
+                if st.button(f"{skincare_routine_result_four_url[i].get('Name')}"):
+                    webbrowser.open_new_tab(url)
+    except:
+        st.button("Extended: Sorry! There is no toners we can offer you.")
+    try:
+        st.write(" ")
+        st.markdown("Serums")
+        skincare_routine_result_five_url = query.serum_skincare_routine_url(routine_skin_option_for_query, routine_money_option_for_query)
+        for i in range(0,3):
+                url = skincare_routine_result_five_url[i].get('URL')
+                if st.button(f"{skincare_routine_result_five_url[i].get('Name')}"):
+                    webbrowser.open_new_tab(url)
+    except:
+        st.button("Extended: Sorry! There is no serums we can offer you.")
+    try:
+        st.write(" ")
+        st.markdown("Moisturizers")
+        skincare_routine_result_two_url = query.moist_skincare_routine_url(routine_skin_option_for_query, routine_money_option_for_query)
+        for i in range(0,3):
+                url = skincare_routine_result_two_url[i].get('URL')
+                if st.button(f"{skincare_routine_result_two_url[i].get('Name')}"):
+                    webbrowser.open_new_tab(url)
+    except:
+        st.button("Extended: Sorry! There is no moisturizers we can offer you.")
+    try:
+        st.write(" ")
+        st.markdown("Sunscreens")
+        skincare_routine_result_three_url = query.sun_skincare_routine_url(routine_skin_option_for_query, routine_money_option_for_query)
+        for i in range(0,4):
+                url = skincare_routine_result_three_url[i].get('URL')
+                if st.button(f"{skincare_routine_result_three_url[i].get('Name')}"):
+                    webbrowser.open_new_tab(url)
+    except:
+        st.button("Extended: Sorry! There is no sunscreens we can offer you.")
+#except:
+#    st.stop()
+#    st.write("Sorry!")
 
 ######### 2º PART
 
