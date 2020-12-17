@@ -6,14 +6,9 @@ import webbrowser
 from tools import options, query
 
 ### PRUEBA:
-st.title("Radiant Qara")
-st.header("1 Header")
-st.subheader("1 Subheader")
-st.text("Holi")
-st.markdown("Holi in markdown")
 
-img = Image.open("images/one.jpg")
-st.image(img, width=300, caption="skincare")
+img_one = Image.open("images/one.png")
+st.image(img_one, width=700, caption="")
 
 ######### 1º PART
 
@@ -29,6 +24,8 @@ if preference == 'Please select one':
 elif preference == "Let’s go with the basic!":
     #if st.button("Let's start by some basics!"):
     st.write(" ")
+    img_two = Image.open("images/two.png")
+    st.image(img_two, width=700, caption="Skin type infography")
     st.subheader("What's your skin type:")
     routine_skin_option = st.radio("", options.list_type_skin)
     # st.write(routine_skin_option)
@@ -82,6 +79,8 @@ elif preference == "Let’s go with the basic!":
 elif preference == "Let’s go deep inside with the skincare routine!":
     #if st.button("Let's start by some basics!"):
     st.write(" ")
+    img_three = Image.open("images/two.png")
+    st.image(img_three, width=700, caption="Skin type infography")
     st.subheader("What's your skin type:")
     routine_skin_option = st.radio("", options.list_type_skin)
     # st.write(routine_skin_option)
