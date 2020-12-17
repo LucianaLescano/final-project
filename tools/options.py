@@ -6,6 +6,12 @@ import pandas as pd
 
 data = pd.read_csv('data/final_dataset_to_mongo.csv', index_col='Unnamed: 0')
 
+######### 1º PART
+
+one_list_type_skin = ['Normal', 'Dry', 'Combination', 'Oily', 'Sensitive']
+
+######### 2º PART
+
 # First list: Brand
 list_brand = list(data.Brand.unique())
 
