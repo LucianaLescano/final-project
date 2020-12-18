@@ -54,7 +54,7 @@ elif preference == "Let’s go with the basic!":
                 if st.button(f"{skincare_routine_result_one_url[i].get('Name')}"):
                     webbrowser.open_new_tab(url)
     except:
-        st.button("Basic: Sorry! There is no cleansers we can offer you.")
+        st.button("Basic: Sorry! There is no other cleansers we can offer you.")
     try:
         st.write(" ")
         st.markdown("Moisturizers")
@@ -64,17 +64,17 @@ elif preference == "Let’s go with the basic!":
                 if st.button(f"{skincare_routine_result_two_url[i].get('Name')}"):
                     webbrowser.open_new_tab(url)
     except:
-        st.button("Basic: Sorry! There is no moisturizers we can offer you.")
+        st.button("Basic: Sorry! There is no other moisturizers we can offer you.")
     try:
         st.write(" ")
         st.markdown("Sunscreens")
         skincare_routine_result_three_url = query.sun_skincare_routine_url(routine_skin_option_for_query, routine_money_option_for_query)
-        for i in range(0,4):
+        for i in range(0,3):
                 url = skincare_routine_result_three_url[i].get('URL')
                 if st.button(f"{skincare_routine_result_three_url[i].get('Name')}"):
                     webbrowser.open_new_tab(url)
     except:
-        st.button("Basic: Sorry! There is no sunscreens we can offer you.")
+        st.button("Basic: Sorry! There is no other sunscreens we can offer you.")
 
 elif preference == "Let’s go deep inside with the skincare routine!":
     #if st.button("Let's start by some basics!"):
@@ -113,7 +113,7 @@ elif preference == "Let’s go deep inside with the skincare routine!":
                 if st.button(f"{skincare_routine_result_one_url[i].get('Name')}"):
                     webbrowser.open_new_tab(url)
     except:
-        st.button("Extended: Sorry! There is no cleansers we can offer you.")
+        st.button("Pro: Sorry! There is no other cleansers we can offer you.")
     try:
         st.write(" ")
         st.markdown("Toners")
@@ -123,7 +123,7 @@ elif preference == "Let’s go deep inside with the skincare routine!":
                 if st.button(f"{skincare_routine_result_four_url[i].get('Name')}"):
                     webbrowser.open_new_tab(url)
     except:
-        st.button("Extended: Sorry! There is no toners we can offer you.")
+        st.button("Pro: Sorry! There is no other toners we can offer you.")
     try:
         st.write(" ")
         st.markdown("Serums")
@@ -133,7 +133,7 @@ elif preference == "Let’s go deep inside with the skincare routine!":
                 if st.button(f"{skincare_routine_result_five_url[i].get('Name')}"):
                     webbrowser.open_new_tab(url)
     except:
-        st.button("Extended: Sorry! There is no serums we can offer you.")
+        st.button("Pro: Sorry! There is no other serums we can offer you.")
     try:
         st.write(" ")
         st.markdown("Moisturizers")
@@ -143,17 +143,17 @@ elif preference == "Let’s go deep inside with the skincare routine!":
                 if st.button(f"{skincare_routine_result_two_url[i].get('Name')}"):
                     webbrowser.open_new_tab(url)
     except:
-        st.button("Extended: Sorry! There is no moisturizers we can offer you.")
+        st.button("Pro: Sorry! There is no other moisturizers we can offer you.")
     try:
         st.write(" ")
         st.markdown("Sunscreens")
         skincare_routine_result_three_url = query.sun_skincare_routine_url(routine_skin_option_for_query, routine_money_option_for_query)
-        for i in range(0,4):
+        for i in range(0,3):
                 url = skincare_routine_result_three_url[i].get('URL')
                 if st.button(f"{skincare_routine_result_three_url[i].get('Name')}"):
                     webbrowser.open_new_tab(url)
     except:
-        st.button("Extended: Sorry! There is no sunscreens we can offer you.")
+        st.button("Pro: Sorry! There is no other sunscreens we can offer you.")
 #except:
 #    st.stop()
 #    st.write("Sorry!")
